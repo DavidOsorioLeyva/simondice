@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <title>Simon Dice</title>
+    </head>
+    <body>
+        <header>
+            <h1>Simon Dice</h1>
+        </header>
+        <section class="instrucciones-wrapper">
+            <p>Memoriza el orden en que se iluminan las casillas y repite el orden. Supera los 10 niveles</p>
+        </section>
+        <main>
+            <div class="gameboard">
+                <div id="celeste" class="color celeste left" data-color="celeste"></div>
+                <div id="violeta" class="color violeta right" data-color="violeta"></div>
+                <div id="naranja" class="color naranja left" data-color="naranja"></div>
+                <div id="verde" class="color verde right" data-color="verde"></div>
+                <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+            </div>
+        </main>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

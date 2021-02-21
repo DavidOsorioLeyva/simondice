@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #dedede;
+    font-family: 'RocknRoll One', sans-serif;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instrucciones-wrapper {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameboard {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+}
+.celeste {
+    background: #22A6B3;
+}
+.celeste.light {
+    background: #7ED6DF;
+}
+.violeta {
+    background: #be2edd;
+}
+.violeta.light {
+    background: #e056fd;
+}
+.naranja {
+    background: #f0932b;
+}
+.naranja.light {
+    background: #ffbe76;
+}
+.verde {
+    background: #6ab04c;
+}
+.verde.light {
+    background: #badc58;
+}
+.btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ECF0F1;
+    color: #2C3E50;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-family: 'RocknRoll One', Arial, sans-serif;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+}
+.btn-start:hover {
+    background: #3d5968;
+    color: white;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 501px) {
+    .instrucciones-wrapper {
+        margin-top: 20px;
+    }
+    main {
+        margin-top: 20px;
+    }
+    .gameboard {
+        width: 250px;
+        height: 250px;
+    }
+    .btn-start {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        top: calc(50% - 25px);
+        left: calc(50% - 100px);
+    }
+}
