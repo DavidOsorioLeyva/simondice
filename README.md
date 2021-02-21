@@ -1,0 +1,2 @@
+# simondice
+Proyecto de JavaScript
