@@ -90,6 +90,10 @@ main {
 @media screen and (max-width: 501px) {
     .instrucciones-wrapper {
         margin-top: 20px;
+        height: auto;
+    }
+    .instrucciones-wrapper p {
+        width: 90%;
     }
     main {
         margin-top: 20px;
